@@ -1,0 +1,58 @@
+{
+	BitmapFont: {
+		default-font: {
+			file: fonts/default.fnt,
+			scaledSize: 20,
+			markupEnable: true,
+		},
+		little-font: {
+			file: fonts/default.fnt,
+			scaledSize: -1,
+			markupEnable: true,
+		}
+	},
+	Color: {
+         "white": { "hex": FFFFFF },
+		 "gray": { "hex":  777777 },
+         "black": { "hex": 000000 },
+		 "orange": { "hex": FFAA00 },
+		 "yellow": { "hex": FFFF00 },
+		 "red": { "hex": FF0000 }
+	},
+    com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+    	"default": {
+    		"font": default-font,
+    	},
+		"little": {
+			"font": little-font,
+		}
+	},
+    com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: { 
+         "default": {
+         	"font": default-font,
+         	"fontColor": white,
+         	"downFontColor": black,
+         	"overFontColor": orange,
+         	},
+    },
+	com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+		default: {
+			titleFont: default-font
+		},
+	},
+	com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+		"default": {
+			"font": default-font, 
+         	"fontColor": white,
+         	"cursor": cursor_textfield,
+			"messageFont": default-font,
+			"messageFontColor": white,
+		}
+	},
+	com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+		"default": {
+			"up": textfield
+		}
+	},
+	
+}
